@@ -1,5 +1,13 @@
 Recommended tools: [AppIcon Generator](http://www.tweaknow.com/appicongenerator.php), [MakeAppIcon](https://makeappicon.com/), [iConvert Icons](https://iconverticons.com/online/).
 
+## Minimal cross-platform build
+The files
+
+* `icon.icns` of at least 512x512
+* `icon.ico` of at least 256x256
+
+need to be in the [build](/configuration/configuration.md#MetadataDirectories-buildResources) directory. For this minimal cross-platform build setup, there should **not** be a file named `icon.png` in the same directory (causes [issues](https://github.com/electron-userland/electron-builder/issues/2577) with Linux icon).
+
 ## macOS
 
 Files
